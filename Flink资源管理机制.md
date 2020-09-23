@@ -19,7 +19,7 @@ Flink 资源管理相关的组件：
 
 其他的组件都是进程内的组件
 
-![img](D:\mml\Github\study\img\flink0001)
+![img](flink0001)
 
 如图：
 
@@ -48,7 +48,7 @@ Slot 的概念贯穿整个资源调度的过程。
 * Cluster
   * 1 Flink Master + N Task Manager
 
-![img](D:\mml\Github\study\img\flink0002)
+![img](flink0002)
 
 资源调度的范畴，实际上是图中红框中的内容
 
@@ -68,7 +68,7 @@ Flink 资源调度是一个经典的两层模型，
 
 如图: Scheduler 向 Slot pool 发出 Slot Request（资源请求），Slot Pool 如果不能满足该资源需求则会进一步请求 Resource Manager，具体来满足该请求的组件是 Slot Manager
 
-![img](D:\mml\Github\study\img\flink0003)
+![img](flink0003)
 
 Task 对 Slot 进行复用有两种方式：
 
@@ -88,7 +88,7 @@ Task 对 Slot 进行复用有两种方式：
 
 ### 2.1 TaskManager有哪些资源
 
-![img](D:\mml\Github\study\img\flink0004)
+![img](flink0004)
 
 ​																				<!--TaskManager资源组成-->
 
@@ -106,7 +106,7 @@ Task 对 Slot 进行复用有两种方式：
 
 ### 2.2 Slot 有哪些资源
 
-![img](D:\mml\Github\study\img\flink0005)
+![img](flink0005)
 
 ​																			<!--Slot资源组成-->
 
@@ -134,7 +134,7 @@ flink run -yn <num>
 
 ### 2.4 Cluster -> Job资源调度的过程
 
-![img](D:\mml\Github\study\img\flink0006)
+![img](flink0006)
 
 ​																	<!-- Cluster 到 Job 的资源调度过程 -->
 
@@ -164,7 +164,7 @@ Scheduler 向 Slot Pool 发送请求，如果 Slot 资源足够则直接分配�
   - 一个 Slot 中相同任务只能有一个
   - Slot Sharing Group 中的任务可共用 Slot
 
-![img](D:\mml\Github\study\img\flink0007)
+![img](flink0007)
 
 ​																<!--Job到Task资源调度过程-->
 
