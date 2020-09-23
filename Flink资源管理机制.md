@@ -1,5 +1,5 @@
 ---
-typora-root-url: img
+typora-root-url: https://github.com/Mermenglin/study/edit/master/img
 ---
 
 # Flink资源管理机制
